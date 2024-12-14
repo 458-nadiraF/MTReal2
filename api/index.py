@@ -11,13 +11,7 @@ class handler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type','text/plain')
         self.end_headers()
-        error_response = {
-                "message": "See Log",
-                "log_file": open(LOG_FILE_PATH).read()
-        }
-        traceback.print_exc()
-        self.wfile.write(json.dumps(error_response).encode('utf-8'))
-        #self.wfile.write('Hello, world!'.encode('utf-8'))
+        self.wfile.write('Hello, world!'.encode('utf-8'))
         return
     def get_account_balance(self,token, account):
         headers = {
