@@ -84,9 +84,10 @@ class handler(BaseHTTPRequestHandler):
                 "symbol": symbol,
                 "actionType": actType,
                 "volume": round(lot*balance2, 2),
-                "stopLoss": sl,
+                "stopLoss": float(sl),
                 "takeProfit": float(tp),
-                "takeProfitUnits": "ABSOLUTE_PRICE"
+                "takeProfitUnits": "ABSOLUTE_PRICE", 
+                "stopLossUnits":"ABSOLUTE_PRICE"
             }
             
             headers = {
