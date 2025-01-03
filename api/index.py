@@ -119,7 +119,7 @@ class handler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(response_data).encode())
            
             log_message = (
-                f" MTReal1. Execution Duration: {execution_duration}ms\n"
+                f"MTReal2. Execution Duration: {execution_duration}ms\n"
                 f"Response Content: {response_data}\n"
                 "-------------------------------------------\n"
             )
