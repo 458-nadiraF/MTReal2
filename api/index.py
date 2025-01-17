@@ -127,7 +127,7 @@ class handler(BaseHTTPRequestHandler):
                 "-------------------------------------------\n"
             )
             # Define the API endpoint where you want to forward the request
-            textContent=f"Alert Screener A03:Any alert() function call \n{log_message}"
+            textContent=f"Alert Screener MTReal2: Any alert() function call \n{log_message}"
             params={
                "chat_id": f"{os.getenv('CHAT_ID')}",
                "text": textContent
